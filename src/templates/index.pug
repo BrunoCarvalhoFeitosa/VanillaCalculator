@@ -1,0 +1,39 @@
+doctype html
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")/
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")/
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")/
+        meta(name="author", content="Bruno Carvalho Feitosa")/
+        meta(name="description", content="E-commerce para venda de móveis para sala, cozinha e quarto")/
+        meta(name="keywords", content="E-commerce Tok D'Art, venda, móveis, sala, cozinha, quarto")/
+        link(rel="stylesheet", type="text/css" href="/css/index.css")/
+        link(rel="icon", type="image/png", href="../images/fav.png")/
+        title Vanilla Calculator
+    body
+
+        section.b-container
+            section.b-container__content
+                form.b-container__content-calculator( name="calc")
+                    input(type="text", class="value", name="txt", readonly="")/
+                    span(class="num clear", onclick="document.calc.txt.value =''") c
+                    span(class="num", onclick="document.calc.txt.value +='/'") /
+                    span(class="num", onclick="document.calc.txt.value +='*'") *
+                    span(class="num", onclick="document.calc.txt.value +='7'") 7
+                    span(class="num", onclick="document.calc.txt.value +='8'") 8
+                    span(class="num", onclick="document.calc.txt.value +='9'") 9
+                    span(class="num", onclick="document.calc.txt.value +='-'") -
+                    span(class="num", onclick="document.calc.txt.value +='4'") 4
+                    span(class="num", onclick="document.calc.txt.value +='5'") 5
+                    span(class="num", onclick="document.calc.txt.value +='6'") 6
+                    span(class="num plus", onclick="document.calc.txt.value +='+'") +
+                    span(class="num", onclick="document.calc.txt.value +='3'") 3
+                    span(class="num", onclick="document.calc.txt.value +='2'") 2
+                    span(class="num", onclick="document.calc.txt.value +='1'") 1
+                    span(class="num", onclick="document.calc.txt.value +='0'") 0
+                    span(class="num", onclick="document.calc.txt.value +='00'") 00
+                    span(class="num", onclick="document.calc.txt.value +='.'") .
+                    span(class="num equal", onclick="document.calc.txt.value = eval(calc.txt.value)") =
+            footer.b-container__footer
+                h2 
+                    a(href="https://www.linkedin.com/in/bruno-carvalho-feitosa/", target="_blank") Desenvolved by Bruno Carvalho Feitosa
